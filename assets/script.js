@@ -1,9 +1,11 @@
-// Initialize Firebase
+  // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyCcPFcbAjIsgXGQwE-A3AcOXkeD40qypE8",
-    authDomain: "train-times-93583.firebaseapp.com",
-    databaseURL: "https://train-times-93583.firebaseio.com",
-    storageBucket: "train-times-93583.appspot.com"
+    apiKey: "AIzaSyBA9DJPk6nPXV00foi71cva9ADvpWx1vY4",
+    authDomain: "train-scheduler-c2c2d.firebaseapp.com",
+    databaseURL: "https://train-scheduler-c2c2d.firebaseio.com",
+    projectId: "train-scheduler-c2c2d",
+    storageBucket: "train-scheduler-c2c2d.appspot.com",
+    messagingSenderId: "334508516717"
 };
 
 firebase.initializeApp(config);
@@ -20,7 +22,6 @@ var frequency = $("#frequency-input").val().trim();
 
 // Creates local "temporary" object for holding train data
 var newTrain = {
-
     name: trainName,
     destination: destination,
     firstTrain: firstTrain,
